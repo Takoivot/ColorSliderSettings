@@ -11,6 +11,7 @@
 		F365BED528743AA5006AF898 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365BED428743AA5006AF898 /* ContentView.swift */; };
 		F365BED728743AA6006AF898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F365BED628743AA6006AF898 /* Assets.xcassets */; };
 		F365BEDA28743AA6006AF898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F365BED928743AA6006AF898 /* Preview Assets.xcassets */; };
+		F365BEE128743B9D006AF898 /* ColorSliderAndValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365BEE028743B9D006AF898 /* ColorSliderAndValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F365BED428743AA5006AF898 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F365BED628743AA6006AF898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F365BED928743AA6006AF898 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F365BEE028743B9D006AF898 /* ColorSliderAndValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderAndValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				F365BED228743AA5006AF898 /* ColorSliderSettingsApp.swift */,
 				F365BED428743AA5006AF898 /* ContentView.swift */,
+				F365BEE028743B9D006AF898 /* ColorSliderAndValue.swift */,
 				F365BED628743AA6006AF898 /* Assets.xcassets */,
 				F365BED828743AA6006AF898 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F365BED528743AA5006AF898 /* ContentView.swift in Sources */,
+				F365BEE128743B9D006AF898 /* ColorSliderAndValue.swift in Sources */,
 				F365BED328743AA5006AF898 /* ColorSliderSettingsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
