@@ -35,6 +35,8 @@ struct SliderView: View {
             )
                 .bordered()
                 .keyboardType(.numberPad)
+              
+            
         }
         .padding()
     }
