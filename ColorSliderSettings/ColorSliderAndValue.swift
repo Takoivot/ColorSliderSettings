@@ -12,11 +12,11 @@ struct ColorSliderAndValue: View {
     let textColor: Color
     var body: some View {
         SliderView(sliderValue: $value, textColor: textColor)
-            
     }
 }
 
 struct SliderView: View {
+
     @Binding var sliderValue: Double
     var textColor: Color
     
@@ -35,8 +35,6 @@ struct SliderView: View {
             )
                 .bordered()
                 .keyboardType(.numberPad)
-              
-            
         }
         .padding()
     }

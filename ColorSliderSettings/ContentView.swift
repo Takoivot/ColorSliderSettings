@@ -20,19 +20,22 @@ struct ContentView: View {
                 .frame(width: 300, height: 200)
                 .cornerRadius(20)
                 .foregroundColor(Color(
-                    red: redValue/255,
+                    red:  redValue/255,
                     green: greenValue/255,
                     blue: blueValue/255)
                 )
             ColorSliderAndValue(
                 value: $redValue,
                 textColor: .red)
+            .accentColor(.red)
             ColorSliderAndValue(
                 value: $greenValue,
                 textColor: .green)
+            .accentColor(.green)
             ColorSliderAndValue(
                 value: $blueValue,
                 textColor: .blue)
+            .accentColor(.blue)
             Spacer()
         }
         .focused($IsFocused)
@@ -40,12 +43,10 @@ struct ContentView: View {
             ToolbarItem(placement: .keyboard) {
                 Button("Done"){
                     IsFocused = false
+                    
                 }
-
             }
-            
         }
-        
     }
 }
 
