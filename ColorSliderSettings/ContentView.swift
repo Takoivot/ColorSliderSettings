@@ -11,6 +11,8 @@ struct ContentView: View {
     @State private var redValue = Double.random(in: 1...255)
     @State private var greenValue = Double.random(in: 1...255)
     @State private var blueValue = Double.random(in: 1...255)
+    @FocusState private var IsFocused: Bool
+
     
     var body: some View {
         VStack(spacing: 5){
@@ -32,6 +34,16 @@ struct ContentView: View {
                 value: $blueValue,
                 textColor: .blue)
             Spacer()
+        }
+        .focused($IsFocused)
+        .toolbar {
+            ToolbarItem(placement: .keyboard) {
+                Button("Done"){
+                    IsFocused = false
+                }
+
+            }
+            
         }
         
     }
