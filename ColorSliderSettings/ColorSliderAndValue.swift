@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ColorSliderAndValue: View {
-    @State private var value = Double.random(in: 0...255)
+    @Binding var value: Double
+    let textColor: Color
     var body: some View {
-        SliderView(sliderValue: $value)
+        SliderView(sliderValue: $value, textColor: textColor)
             
     }
 }
 
 struct SliderView: View {
     @Binding var sliderValue: Double
+    var textColor: Color
     
     var body: some View {
         HStack{
@@ -24,17 +26,16 @@ struct SliderView: View {
                 .font(.system(size: 15))
                 .frame(width: 30)
                 .lineLimit(1)
+                .foregroundColor(textColor)
             Slider(value: $sliderValue, in:  0...255, step: 1)
         }
         .padding()
-       
-      
-        
     }
 }
 
 struct ColorSliderAndValue_Previews: PreviewProvider {
     static var previews: some View {
-        ColorSliderAndValue()
+        ColorSliderAndValue( value: .constant(0), textColor: .black)
     }
 }
+
