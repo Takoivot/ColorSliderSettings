@@ -20,10 +20,17 @@ struct ContentView: View {
                 .foregroundColor(Color(
                     red: redValue/255,
                     green: greenValue/255,
-                    blue: blueValue/255))
-            ColorSliderAndValue( value: $redValue, textColor: .red)
-            ColorSliderAndValue( value: $greenValue, textColor: .green)
-            ColorSliderAndValue( value: $blueValue, textColor: .blue)
+                    blue: blueValue/255)
+                )
+            ColorSliderAndValue(
+                value: $redValue,
+                textColor: .red)
+            ColorSliderAndValue(
+                value: $greenValue,
+                textColor: .green)
+            ColorSliderAndValue(
+                value: $blueValue,
+                textColor: .blue)
             Spacer()
         }
         
