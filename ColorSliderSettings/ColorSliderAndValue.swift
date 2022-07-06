@@ -35,7 +35,6 @@ struct SliderView: View {
             )
                 .bordered()
                 .keyboardType(.numberPad)
-            
         }
         .padding()
     }
@@ -50,13 +49,14 @@ struct ColorSliderAndValue_Previews: PreviewProvider {
 struct BorderViewModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .frame(width: 30,
-                   height: 5)
+            .multilineTextAlignment(.trailing)
+            .frame(width: 35,
+                   height: 10)
             .padding(EdgeInsets(
                 top: 8,
-                leading: 8,
+                leading: 16,
                 bottom: 8,
-                trailing: 8))
+                trailing: 16))
             .overlay(RoundedRectangle(cornerRadius: 4)
                 .stroke(lineWidth: 2)
                 .foregroundColor(.black)
