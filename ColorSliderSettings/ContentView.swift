@@ -28,10 +28,12 @@ struct ContentView: View {
                 value: $redValue,
                 textColor: .red)
             .accentColor(.red)
+            
             ColorSliderAndValue(
                 value: $greenValue,
                 textColor: .green)
             .accentColor(.green)
+            
             ColorSliderAndValue(
                 value: $blueValue,
                 textColor: .blue)
