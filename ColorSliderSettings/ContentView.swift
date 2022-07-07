@@ -42,7 +42,8 @@ struct ContentView: View {
         }
         .focused($IsFocused)
         .toolbar {
-            ToolbarItem(placement: .keyboard) {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
                 Button("Done"){
                     IsFocused = false
                     
